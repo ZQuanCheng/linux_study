@@ -1,0 +1,10 @@
+Edimax AC1200 MU-MIMO WiFi Nano USB 2.0 Adapter
+
+无线网卡官网：
+https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/tw/wireless_adapters_ac1200_dual-band/ew-7822ulc/
+
+Driver 下载页面：
+https://www.edimax.com/edimax/download/download/data/edimax/tw/download/wireless_adapters_ac1200_dual-band/ew-7822ulc
+
+下载链接：
+https://www.edimax.com/edimax/mw/cufiles/files/download/Driver_Utility/EW-7822ULC/EW-7822UTC_Linux_Driver_1.0.2.2.zip

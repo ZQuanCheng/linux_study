@@ -1,0 +1,117 @@
+
+# -------------------------创建虚拟环境yolov5---------------------
+# Step1: 创建虚拟环境yolov5
+conda create -n yolov5 python=3.7
+
+# Step2:显示已创建环境
+conda env list
+
+# Step3: 激活yolov5虚拟环境
+source activate yolov5
+
+# Step4: 查看yolov5中已有的包
+conda list
+
+# Step5: 关闭虚拟环境
+# conda deactivate
+
+# ----------------------------------------------------------------------------------------
+# ---------------------------------------配置库文件---------------------------------------
+# ------------------------------------------------------------------------------------------
+
+# -----------------------------------------PyTorch>=1.7.0------------------------------------
+# 安装PyTorch==1.10.1
+# 官网：https://pytorch.org/get-started/previous-versions/#v191
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cpuonly -c pytorch
+
+# 验证是否安装成功
+Python
+import torch
+import torchvision
+print(torch)
+exit() # 或Ctrl+D
+
+# -----------------------------------------gitpython------------------------------------
+pip install GitPython
+
+# -----------------------------------------matplotlib>=3.2.2----------------------------------
+conda install matplotlib==3.3.4 
+
+# -----------------------------------------numpy>=1.18.5----------------------------------
+# 安装Pytorch时已自动安装好
+
+# ------------------------------------- opencv-python>=4.1.1---------------------------------
+# 官网：https://docs.opencv.org/4.x/d2/de6/tutorial_py_setup_in_ubuntu.html
+# sudo apt-get install python3-opencv
+
+# Pypi官网：https://pypi.org/project/opencv-python/
+pip install opencv-python              # 安装opencv
+pip install opencv-contrib-python      # 安装opencv的contrib扩展包
+
+
+# 验证是否安装成功
+# 方法一：
+python
+import cv2
+exit() # 或Ctrl+D
+# 报错：ImportError: /opt/ros/kinetic/lib/python2.7/dist-packages/cv2.so: undefined symbol: PyCObject_Type
+# 受到ROS影响，没办法，只能采用方法二
+
+# 方法二：
+# （由于ROS原因，只能在需要运行的python文件中添加两句代码）
+python
+import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
+import cv2 as cv
+print(cv.__version__)
+exit() # 或Ctrl+D
+
+# ------------------------------Pillow>=7.1.2  即一般所说PIL--------------------------------
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+
+# -------------------------------------Psutil--------------------------------------
+pip install psutil
+
+# ------------------------------------PyYAML>=5.3.1-------------------------------------
+pip install pyyaml
+
+# -------------------------------------requests>=2.23.0------------------------------------
+python -m pip install requests
+
+# -------------------------------------scipy>=1.4.1-----------------------------------
+python -m pip install scipy
+
+# --------------------------------------thop>=0.1.1-------------------------------------
+pip install thop
+
+# -------------------------------torch>=1.7.0 torchvision>=0.8.1--------------------------
+# 第一步就是安装了Pytorch
+
+# -------------------------------------tqdm>=4.64.0--------------------------------------
+pip install tqdm
+
+# --------------------------------------tensorboard>=2.4.1-------------------------------------
+pip install tensorboard
+
+# -------------------------------------pandas>=1.1.4--------------------------------------
+# conda
+conda install pandas
+# or PyPI
+# pip install pandas
+
+# 验证是否安装成功
+python
+import pandas
+print(pandas.__version__) 
+
+# ---------------------------------------seaborn>=0.11.0------------------------------------
+pip install seaborn
+
+
+# ----------------------------------------------------------------------------------------
+# ---------------------------------------配置结束---------------------------------------
+# ------------------------------------------------------------------------------------------
+
+# Step5: 关闭虚拟环境
+conda deactivate
