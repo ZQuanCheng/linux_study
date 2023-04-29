@@ -190,15 +190,155 @@
 
 
 
+#### 安装pip
+>
+> ```bash
+> $ pip
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_9.jpg" style="zoom:100%">
+> </div>
+>
+> 
+> ```bash
+> $ sudo apt install python3-pip
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_10.jpg" style="zoom:100%">
+> </div>
+>
+
+
+####  安装git
+>
+> ```bash
+> $ git
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_11.jpg" style="zoom:100%">
+> </div>
+>
+> 
+> ```bash
+> $ sudo apt install git
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_12.jpg" style="zoom:100%">
+> </div>
+>
+
+####  安装net-tools
+
+>
+> ```bash
+> $ ifconfig
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_13.jpg" style="zoom:100%">
+> </div>
+>
+> 
+> ```bash
+> $ sudo apt install net-tools
+> ```
+>
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_14.jpg" style="zoom:100%">
+> </div>
+>
+
+
+#### 校准时间:
+
+> 1. 设置网络时间协议 NTP
+> 
+> ```bash
+> $ sudo apt-get install -y chrony ntpdate
+> 
+> $ sudo ntpdate -q ntp.ubuntu.com
+> ```
+>
+> 2. 运行
+> 
+> ```bash
+> $ date -R  # 查看最后的时区, 正常的+0800说明已经是东八区
+> ```
+> 
+> <div align=center>
+> <img src="./images/System_Configure/System_Configure_15.jpg" style="zoom:100%">
+> </div>
+>
 
 
 
 
 
 
+#### 虚拟机通过win10的vpn上网
 
+> <font color="yellow"> 方法一（这样只能是访问github，其他网站不好使） </font>
+> 
+> 虚拟机双网卡设置。
+> 第一个网卡设置为Host-Only模式，保证主机和虚拟机在同一个IP段；
+> 第二个网卡设置为NAT模式，利用主机的上网功能来联网
+> 
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_1.jpg" style="zoom:100%">
+> <img src="./images/Setup_System/Network_VPN_2.jpg" style="zoom:100%">
+> </div>
+>
+> 
+> <font color="yellow"> 方法二（对于使用Clash翻墙的可以用） </font>
+>
+> 1. Clash允许局域网连接
+> 打开电脑Clash for Windows 的 Allow LAN 开关，然后鼠标悬浮在上这个选项上，底部会显示IP地址。
+> 
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_3.jpg" style="zoom:100%">
+> <img src="./images/Setup_System/Network_VPN_4.jpg" style="zoom:100%">
+> </div>
+>
+> clash会放出一个ip地址 `127.0.0.1:7890`
+>
+> 2. 查看windows的ip地址 `192.168.18.136`
+> 
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_5.jpg" style="zoom:100%">
+> </div>
+>
+> 
+> 3. VirtualBox 选择桥接模式
+> 
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_6.jpg" style="zoom:100%">
+> </div>
+>
+> 4. 进入虚拟机，ping一下当前主机的ip
+>
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_7.jpg" style="zoom:100%">
+> </div>
+>
+> 虽然没ping通，但是不影响
+> 
+> 5. linux里打开代理输入这个ip就连接成功了 `192.168.18.136:7890`
+>
+> <div align=center>
+> <img src="./images/Setup_System/Network_VPN_8.jpg" style="zoom:100%">
+> <img src="./images/Setup_System/Network_VPN_9.jpg" style="zoom:100%">
+> </div>
+>
 
+#### 若以上都不行，就下载Linux版本的Clash
 
+> 直接在虚拟机里面装了一遍Linux版的clash，可以翻墙
+> 
+> 
 
 
 
