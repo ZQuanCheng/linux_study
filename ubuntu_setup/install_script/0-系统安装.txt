@@ -1,4 +1,0 @@
-见 ：安装双系统（Windows+Ubuntu）+ROS+Anaconda+VScode.docx
-
-
-  
