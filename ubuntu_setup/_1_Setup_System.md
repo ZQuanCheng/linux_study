@@ -217,5 +217,34 @@
 > 
 > <font color="yellow"> 以后想要向虚拟机中传输文件，就可以先将文件放到`E:\VirtualBox_Files\vmshare`，然后进入虚拟机的`/home/zqc/vmshare`查看 </font>
 >
+
+> <font color="yellow"> 每次登陆ubuntu系统访问共享文件夹，每次都需要输入密码，给予权限，怎么一劳永逸？ </font>
+>
+> <div align=center>
+> <img src="./images/Setup_System/Ubuntu_34.jpg" style="zoom:100%">
+> </div>
+>
+> https://blog.csdn.net/weixin_48419914/article/details/124398220
+>
+> 右键，查看`Properties` -> `Permissions`
+>
+> <div align=center>
+> <img src="./images/Setup_System/Ubuntu_35.jpg" style="zoom:100%">
+> <img src="./images/Setup_System/Ubuntu_36.jpg" style="zoom:100%">
+> </div>
+>
+> 查看共享文件夹的属性可知，共享文件夹的`Owner`是`root`,所属的`Group`是`vboxsf`。以用户登录的时候，自然是没法访问该文件夹的。
+>
+> 那么就需要将用户添加到`Group`中，以获得访问权限。
+> ```bash
+> # $ sudo usermod -aG vboxsf username
+> $ sudo usermod -aG vboxsf zqc
 > 
+> # //如果不知道自己的usename，可以使用下条命令
+> # $ sudo usermod -aG vboxsf $(whoami)
+> ```
+>
+> 重启虚拟机，发现不在需要每次都手动输入密码才能访问
+> 
+
 
