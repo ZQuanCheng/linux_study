@@ -162,7 +162,8 @@
 > 
 >
 > # 还可以赋予脚本所有者执行权限，允许该用户执行该脚本
-> chmod u+rx software_setup.sh
+> # r、w、x 分别表示读、写、执行权限 
+> chmod +rx software_setup.sh 
 > ./software_setup.sh
 > ```
 >

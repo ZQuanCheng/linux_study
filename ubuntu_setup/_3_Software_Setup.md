@@ -733,3 +733,14 @@
 #### 创建虚拟环境（以yolov5为例）
 
 > 见`Old_Notes/Ubuntu_setup_note.docx`
+
+
+
+
+
+
+
+
+
+
+
