@@ -334,6 +334,8 @@
 > <img src="./images/System_Configure/Network_VPN_9.jpg" style="zoom:100%">
 > </div>
 >
+> 6. 即使后面win10的ip地址变了，虚拟机依旧可以翻墙，不知道为什么？
+> 
 
 #### 若以上都不行，就下载Linux版本的Clash
 
