@@ -63,6 +63,8 @@
 >
 > 安装：一路Next就可以了,这个比较简单。
 > 
+> 官方手册在D:\VirtualBox\doc\UserManual.pdf
+> 
 > 配置：
 >
 > `CTRL+G`打开全局设定，设置虚拟机默认安装位置
@@ -104,9 +106,19 @@
 > <img src="./images/Setup_System/virtual_machine_11.jpg" style="zoom:100%">
 > <img src="./images/Setup_System/virtual_machine_12.jpg" style="zoom:100%">
 > <img src="./images/Setup_System/virtual_machine_13.jpg" style="zoom:100%">
+> <img src="./images/Setup_System/virtual_machine_14.jpg" style="zoom:100%">
 > </div>
-> 
+>
 
+> 上面显存大小的设置`max`为`128MB`，为什么这么低？
+> 
+> https://forums.virtualbox.org/viewtopic.php?f=6&t=107806#:~:text=256MB%20is%20the%20max.,%2C%20128MB%20is%20the%20max.)
+>
+> `VirtualBox` 能提供的 最大显存为 `256MB`。 （对于某些 VM 操作系统设置，最大 `128MB`。我们就是）该 `RAM` 实际上位于主机的常规 `RAM` 内，而不是显卡的 `RAM`。
+>
+> 如果想要更大的显存，最好将 `VirtualBox` 更换成功能更强大的 `VMware`
+>
+> 
 
 
 
@@ -185,6 +197,11 @@
 > <img src="./images/Setup_System/Ubuntu_27.jpg" style="zoom:100%">
 > </div>
 >
+> 如果想要获取增强功能的虚拟盘
+> 
+> 点击左上角：设备 -> 安装增强功能
+>
+> 会提示是否重新安装
 > 
 
 
