@@ -47,13 +47,13 @@
 >
 > `ls`: 列出当前路径下的文件
 > 
-> `exit`: 终止shell。
+> `exit`: 终止`shell`。
 > 
-> `export`: 使变量的值对当前shell的所有子进程都可见 。
+> `export`: 使变量的值对当前`shell`的所有子进程都可见 。
 > 
 > `pwd`: 显示当前工作目录。或者`echo $PWD`
 > 
-> `alias`: 设置bash别名。
+> `alias`: 设置`bash`别名。
 > 
 > `unalias`: 删除已定义的别名。
 > 
