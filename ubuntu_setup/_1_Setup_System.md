@@ -265,7 +265,7 @@
 > 
 
 
-#### 最终虚拟机的配置如图
+### 最终虚拟机的配置如图
 > <div align=center>
 > <img src="./images/Setup_System/finish.jpg" style="zoom:100%">
 > </div>

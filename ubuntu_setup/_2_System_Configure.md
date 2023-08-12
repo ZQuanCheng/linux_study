@@ -312,10 +312,7 @@
 > <img src="./images/System_Configure/Network_VPN_5.jpg" style="zoom:100%">
 > </div>
 >
-> 也可以不用这么麻烦
 > 
-> 在任务管理器(`Ctrl + Alt + Del`)中可以直接看到
->
 > 
 > 3. VirtualBox 选择桥接模式
 > 
@@ -346,6 +343,18 @@
 > 直接在虚拟机里面装了一遍Linux版的clash，可以翻墙
 > 
 > 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
