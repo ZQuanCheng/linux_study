@@ -97,7 +97,25 @@
 > </div>
 > 
 ### 设置虚拟机
+
+> 
+> 注意：如果`系统->处理器->"启用嵌套 vt-x/amd-v"`是`灰色`，无法点击，看下面的博客解决
 >
+> > https://blog.csdn.net/weixin_42695055/article/details/126048183
+> > 
+> > 使用`Everythind`搜索`VBoxManage.exe`，可以找到VirtualBox的根目录，在根目录的路径下执行
+> > 
+> > ```bash
+> > # 进入到VirtualBox的根目录
+> > cd D:\VirtualBox
+> > 
+> > # 查看新建虚拟机的名称`vms1`
+> > VBoxManage.exe list vms
+> > 
+> > # 开启嵌套vt-x/adm-v，其中的"vms1"是需要开启嵌套vt-x /adm-v的虚拟机名称
+> > VBoxManage.exe modifyvm "vms1" --nested-hw-virt on # 
+> > ```
+> 
 > <div align=center>
 > <img src="./images/Setup_System/virtual_machine_7.jpg" style="zoom:100%">
 > <img src="./images/Setup_System/virtual_machine_8.jpg" style="zoom:100%">
